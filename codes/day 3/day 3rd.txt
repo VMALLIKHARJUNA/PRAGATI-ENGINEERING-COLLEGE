@@ -1,0 +1,144 @@
+1st:-
+a=1
+b=2
+a=a^b
+b=a^b
+a=a^b
+print(a)
+print(b)
+
+
+2nd:-
+'''
+num=[1,2,3,4,5,6,7,8,9,10]
+print(num)
+print("first ele in list",num[0])
+print(num[2:5])
+print(num[::2])
+print(num[1::3])
+del num[2:4]
+print(num)
+
+num=[1,'a',"abc",[2,3,4],5.6]
+print(num)
+
+n=int(input("enter n value:"))
+s=0
+i=1
+while(i<=n):
+    s=s+i
+    i=i+1
+print(s)
+
+num=[1,2,3,4,15,6,7,8,9,10]
+print(sorted(num))
+'''
+num=[12,-2,-33,84,-2]
+num.append(0)
+print(num)
+print(num.count(-2))
+num.insert(3,100)
+print(num)
+num.remove(12)
+print(num)
+num.reverse()
+print(num)
+
+num=str(input("enter value:"))
+print(int(num,17))
+
+
+3rd:-
+
+'''
+i=int(input("enter a number:"))
+s=0
+n=i
+while (n!=0):
+    r=n%10
+    #print("r=",r)
+    s=s+(r**3)
+    #print("s=",s)
+    n=n//10
+    #print("n=",n)
+if(s==i):
+    print("given number is amstrong")
+else:
+    print("given number is not an amstrong number ")
+'''
+    
+#universal
+x=1
+while(x>0):
+    
+    i=int(input("enter a number:"))
+    p=len(str(i))
+    s=0
+    n=i
+    while (n!=0):
+    
+        r=n%10
+        #print("r=",r)
+        s=s+(r**p)
+        #print("s=",s)
+        n=n//10
+        #print("n=",n)
+    if(s==i):
+        print("given number is amstrong")
+    else:
+        print("given number is not an amstrong number ")
+
+    
+x=1
+while(x>0):
+        
+    n=int(input("enter num:"))
+    p=len(str(n))
+    print("digits=",p)
+    s=0
+    t=n
+    while(t>0):
+        r=t%10
+        print("rem=",r)
+        s+=r**p
+        print("sum=",s)
+        t=t//10
+        print("temp=",t)
+        print("\n")
+    if(n==s):
+            print("am")
+    else:
+            print("nam")
+
+
+
+
+
+4th:-
+
+'''
+cubes=[]
+for i in range(11):
+    cubes.append(i**3)
+print(cubes)
+'''
+num=[int(d) for d in str(input("enter number:"))]
+even,odd=0,0
+print(num)
+for i in range (0,len(num)):
+    if i%2==0:
+        even=even+num[i]
+    else:
+        odd=odd+num[i]
+print(abs(odd-even))
+
+
+5th:-
+
+term=int(input("enter the term"))
+if term%2==0:
+    term=term//2
+    print(3**(term-1))
+else:
+    term=term//2+1
+    print(2**(term-1))
